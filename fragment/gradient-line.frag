@@ -14,7 +14,7 @@ float plot(vec2 st) {
 void main() {
 	vec2 st = gl_FragCoord.xy/u_resolution;
 
-    float y = smoothstep(0.2,0.5,st.x) - smoothstep(0.5,0.8,st.x);
+    float y = smoothstep(0.4,0.5,st.x) - smoothstep(0.2,0.8,st.x);
 
     vec3 color = vec3(y);
 
